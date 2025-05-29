@@ -16,13 +16,22 @@ const getAllTrainersS = async () => {
     return trainers;
 };
 
-const deletedTrainersS = async (id:string) => {
-     const trainers = await User.deleteOne({ _id: id, role: 'TRAINER' });
+const deletedTrainersS = async (id: string) => {
+    const trainers = await User.deleteOne({ _id: id, role: 'TRAINER' });
     return trainers;
+};
+
+const getTrainersS = async (id: string) => {
+    const trainers = await User.findById(id);
+    if (trainers?.role === "TRAINER") {
+        return trainers
+    }
+    return null;
 };
 
 export const trainerService = {
     createTrainer,
     getAllTrainersS,
-    deletedTrainersS
+    deletedTrainersS,
+    getTrainersS
 };

@@ -1,4 +1,5 @@
 import express, { Request, Response } from 'express'
+import cors from "cors"
 import userRouter from './module/user/user.router'
 import authRoute from './module/auth/auth.route'
 import trainerRouter from './module/trainer/trainer.route'
@@ -8,6 +9,7 @@ import bookingrouter from './module/booking/booking.route'
 const app = express()
 
 // middleware
+app.use(cors())
 app.use(express.json())
 
 app.use('/api/auth', authRoute)

@@ -41,8 +41,24 @@ const deletTrainrs = catchAsync(async (req, res) => {
     });
 });
 
+const getTrainrs = catchAsync(async (req, res) => {
+    const id = req.params.id
+    const result = await trainerService.getTrainersS(id);
+
+    sendResponse(res, {
+        status: true,
+        statusCode: httpStatus.OK,
+        message: 'Get Trainer successfully',
+        data: result,
+    });
+});
+
+
+
+
 export const trainerController = {
     createTrainerC,
     getAllTrainers,
     deletTrainrs,
+    getTrainrs
 };
