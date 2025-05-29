@@ -74,7 +74,7 @@ password :
 লোকালি রান করানোর জন্য:
 
 git clone link
-cd project-folder
+cd project-folders
 npm install
 npm run dev   
 
