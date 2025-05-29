@@ -73,10 +73,10 @@ password :
 
 লোকালি রান করানোর জন্য:
 
-git clone <your-repo-link>
+git clone link
 cd project-folder
 npm install
-npm run dev
+npm run dev   
 
-###Live Hosting Link:
+###Live Hosting Links:
 
