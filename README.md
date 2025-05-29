@@ -1,4 +1,13 @@
-Project Overview:
+##Project Overview:
+Gym Class Scheduling and Membership Management System is a role-based web application built with TypeScript, Express.js and MongoDB. It manages gym activities for three roles: admin, trainer and trainee.
+
+Admins can manage trainers, trainees and create schedules for up to 5 classes per day, each lasting 2 hours and with a maximum of 10 trainees per class.
+
+Trainees can view schedules, book/cancel classes and update their profile.
+
+Trainers can only view their assigned schedules.
+
+The system uses JWT authentication, follows a modular pattern and ensures booking conflict prevention and role-based access.
 
 ✨ Key Features:
 Admin Dashboard for managing trainers, classes, and users.
@@ -68,8 +77,8 @@ Booking
 ├── schedule (ref: ClassSchedule)
 
 Admin Credentials:
-email :
-password :
+email :admin@example.com
+password :strongpassword123
 
 লোকালি রান করানোর জন্য:
 
@@ -78,6 +87,6 @@ cd project-folders
 npm install
 npm run dev   
 
-###Live Hosting Links:
+###Live Hosting Links: https://gym-class-scheduling-an-membership.vercel.app/
 
-update
+Postman documentation: https://docs.google.com/document/d/1_F8mmzfM2O9awajs_b51Gkr7Fsd0dW59wIka7oLfMss/edit?usp=sharing
