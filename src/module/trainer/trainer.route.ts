@@ -6,7 +6,7 @@ import auth from '../../middlewares/auth'
 const trainerRouter = Router()
 
 trainerRouter.post('/create-tainer', auth('ADMIN'), trainerController.createTrainerC)
-trainerRouter.get('/', trainerController.getAllTrainers)
-trainerRouter.delete('/:trainerId', trainerController.deletTrainrs)
+trainerRouter.get('/', auth('ADMIN'),trainerController.getAllTrainers)
+trainerRouter.delete('/:trainerId',auth('ADMIN'),trainerController.deletTrainrs)
 
 export default trainerRouter
