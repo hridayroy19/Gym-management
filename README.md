@@ -16,36 +16,36 @@ API Endpoints:
 Path: /api/auth
 | Route | Method | Access | Description |
 | -------------------- | ------ | ------ | ----------------------- |
-| `/api/auth/login` | POST | Public | User Login |
-| `/api/auth/register` | POST | Public | Register (Trainee only) |
+| /api/auth/login     | POST | Public | User Login |
+| /api/auth/register | POST | Public | Register (Trainee only) |
 
 User Module (Admin Role Only)
 Path: /api/trainer
 
 | Route                       | Method | Access | Description      |
 | --------------------------- | ------ | ------ | ---------------- |
-| `/api/trainer/create-tainer` | POST   | Admin  | Create Trainer   |
-| `/api/trainer`       | GET    | Admin  | Get All Trainers |
-| `/api/trainer/:trainerId`   | DELETE | Admin  | Delete a Trainer |
+| /api/trainer/create-tainer | POST   | Admin  | Create Trainer   |
+| /api/trainer      | GET    | Admin  | Get All Trainers |
+| /api/trainer/:trainerId   | DELETE | Admin  | Delete a Trainer |
 
 3️⃣ Class Schedule Module
 Path: /api/classSchedul
 
 | Route                      | Method | Access  | Description                      |
 | ------------------------   | ------ | ------- | -------------------------------- |
-| `/api/classSchedul/create`  | POST   | Admin   | Create new class schedule       |
-| `/api/classSchedul`         | GET    | Public  | Get all classSchedul            |
-| `/api/classSchedul/:id`     | PATCH  | Admin   | Update schedule                 |
-| `/api/classSchedul/:id`     | DELETE | Admin   | Delete schedule                 |
+| /api/classSchedul/create  | POST   | Admin   | Create new class schedule       |
+| /api/classSchedul        | GET    | Public  | Get all classSchedul            |
+| /api/classSchedul/:id    | PATCH  | Admin   | Update schedule                 |
+| /api/classSchedul/:id     | DELETE | Admin   | Delete schedule                 |
 
 
 4️⃣ Booking Module
 Path: /api/booking
 | Route                     | Method | Access | Description |
 | --------------------------| ------ | ------- | --------------------- |
-| `/api/booking/booked`     | POST   | TRAINEE | Book a class schedule |
-| `/api/booking/cancel/:id` | DELETE | TRAINEE | Cancel booking |
-| `/api/booking/:id`        | GET    | TRAINEE | Get my bookings |
+| /api/booking/booked     | POST   | TRAINEE | Book a class schedule |
+| /api/booking/cancel/:id | DELETE | TRAINEE | Cancel booking |
+| /api/booking/:id        | GET    | TRAINEE | Get my bookings |
 
 Relational Diagram:
 User
