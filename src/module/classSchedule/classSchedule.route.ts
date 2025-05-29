@@ -11,3 +11,4 @@ classSchedulrouter.get('/', classScheduleControll.getAllSchedules);
 classSchedulrouter.patch('/:id', auth('ADMIN'), classScheduleControll.updateSchedule);
 classSchedulrouter.delete('/:id', classScheduleControll.deleteSchedule);
 export default classSchedulrouter;
+ 
