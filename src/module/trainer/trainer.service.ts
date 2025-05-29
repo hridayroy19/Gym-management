@@ -16,7 +16,13 @@ const getAllTrainersS = async () => {
     return trainers;
 };
 
+const deletedTrainersS = async (id:string) => {
+     const trainers = await User.deleteOne({ _id: id, role: 'TRAINER' });
+    return trainers;
+};
+
 export const trainerService = {
     createTrainer,
     getAllTrainersS,
+    deletedTrainersS
 };

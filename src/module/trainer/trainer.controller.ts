@@ -27,7 +27,22 @@ const getAllTrainers = catchAsync(async (req, res) => {
     });
 });
 
+
+const deletTrainrs = catchAsync(async (req, res) => {
+    const id = req.params.trainerId
+    console.log(id,"iddd")
+    const result = await trainerService.deletedTrainersS(id);
+
+    sendResponse(res, {
+        status: true,
+        statusCode: httpStatus.OK,
+        message: 'Delete Trainer successfully',
+        data: result,
+    });
+});
+
 export const trainerController = {
     createTrainerC,
     getAllTrainers,
+    deletTrainrs,
 };
