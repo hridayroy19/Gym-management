@@ -80,6 +80,3 @@ npm run dev
 
 ###Live Hosting Link:
 
-[Postman Documentation](https://.postman.co/workspace/My-Workspace~04701e74-50e7-4767-8d09-e17c52d75a13/collection/34266685-b58c3f91-51b4-4dba-b3fe-cd218a77d192?action=share&creator=34266685)
-
-Postman-এ করা API Collection : [link](https://api.postman.com/collections/34266685-b58c3f91-51b4-4dba-b3fe-cd218a77d192?access_key=PMAT-01JWDTBR0BM6VPDPQ45V25R4FG)
