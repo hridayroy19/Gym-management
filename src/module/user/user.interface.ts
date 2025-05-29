@@ -7,6 +7,7 @@ export interface IUser {
   password: string;
   role: UserRole;
   userStatus:string
+  profilePhoto:string
   createdAt: Date;
   updatedAt: Date;
 }

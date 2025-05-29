@@ -31,6 +31,10 @@ const userSchema = new Schema<IUser>({
     enum: ['ADMIN', 'TRAINER', 'TRAINEE'],
     default: 'TRAINEE',
   },
+  profilePhoto: {
+    type: String,
+    default: ""
+  },
   userStatus: {
     type: String,
     default: 'active',

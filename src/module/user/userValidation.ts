@@ -16,7 +16,7 @@ const userValidationSchema = z.object({
   role: z.enum(['ADMIN', 'TRAINER', 'TRAINEE'], {
     required_error: 'Role is required and must be ADMIN, TRAINER or TRAINEE',
   }).optional(),
-
+  profilePhoto:z.string().optional(),
   userStatus: z.enum(['active', 'inactive']).optional(),
 
   createdAt: z.union([z.string(), z.date()]).optional(),
